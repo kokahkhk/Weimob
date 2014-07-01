@@ -1,0 +1,12 @@
+*** Settings ***
+Suite Setup       导向微信会员卡
+Resource          public.txt
+
+*** Test Cases ***
+test
+    Navigate To Menu    会员营销
+    Click Class Iconstarempty
+    Click Class Iconplus    1
+    Radio Name Type	    1
+    sleep    5
+    [Teardown]    Close All Browsers

@@ -1,0 +1,8 @@
+*** Settings ***
+Library           ../../module/weimob/member/
+
+*** Keywords ***
+导向微信会员卡
+    User Login
+    Choose Public Name    1
+    Navigate To Wei Member

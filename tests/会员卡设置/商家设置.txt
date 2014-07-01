@@ -1,0 +1,15 @@
+*** Settings ***
+Suite Setup       导向微信会员卡
+Suite Teardown    Close All Browsers
+Resource          public.txt
+
+*** Test Cases ***
+test
+    Navigate To Url    商家设置
+    Click Id Insertimage
+    Click Name Viewserver
+    Choose Image From Imagespace    2
+    Click Image Ok Button
+    Select From List By Value    location_p    天津市
+    Input Id Phone    137777
+    sleep    8
